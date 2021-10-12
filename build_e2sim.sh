@@ -6,7 +6,7 @@
 # Exit script on first error
 set -o errexit
 
-# Use UBI-mini as base container image
+# Use UBI as base container image
 container=$(buildah --name e2sim from registry.access.redhat.com/ubi8/ubi)
 
 buildah config --label maintainer="Federico 'tele' Rossi <ferossi@redhat.com>" $container
